@@ -1,5 +1,78 @@
 ﻿<!DOCTYPE html>
+<style>
+    body {margin: 0;padding: 0;font-family: sans-serif;}
+
+ul {
+  position:relative;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  position: relative;
+  display: block;
+  margin: 0 10px;
+  padding: 5px 10px;
+  color: #000;
+  font-size: 24px;
+ 
+  /*text-transform: uppercase;*/
+  transition: 0.5s;
+  overflow: hidden;
+}
+ul li a::before {
+  content: '';
+  position: absolute;
+  top: calc(50% - 2px);
+  left: -100%;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  transition: 0.5s;
+}
+ul li a:hover {
+  color: #000;
+}
+ul li a:hover::before {
+  animation: animate .5s linear forwards;
+}
+
+    a.Aotstup {
+        padding-left: 1000px;
+    }
+
+    p.Potstup {
+        padding-left: 500px;
+    }
+/*keyframes animate{
+  0% {
+    top: calc(50% - 2px);
+    left: -100%;
+    height: 4px;
+    z-index: 1;
+  }
+  50% {
+    top: calc(50% - 2px);
+    left: 0;
+    height: 4px;
+    z-index: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+  }
+}*/
+</style>
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
@@ -9,30 +82,47 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Главная", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Услуги и цены", "About", "Home")</li>
-                    <li>@Html.ActionLink("Контакты", "Contact", "Home")</li>
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">*@
+            @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>*@
+        @*</div>*@
+            @*<div class="navbar-collapse collapse">*@
+                <ul>
+                    <li><a href="#">@Html.ActionLink("Главная", "Index", "Home") </a></li>
+                    <li><a href="#">@Html.ActionLink("Галерея фотографий", "About", "Home")</a></li>
+                    <li><a href="#">@Html.ActionLink("Обо мне", "Contact", "Home")</a></li>
+                    <li><a href="#">@Html.ActionLink("Услуги", "Index", "Home")</a></li>
+                    <li><a href="#">@Html.ActionLink("Запись", "About", "Home")</a></li>
+                    <li><a href="#">@Html.ActionLink("Контакты", "Contact", "Home")</a></li>
                 </ul>
-            </div>
+            @*</div>
         </div>
-    </div>
+    </div>*@
     <div class="container body-content">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year</p>
+            
+
+            <p>
+                <a class="otstup" href="https://vk.com/yourastyusha">
+                    <img src="~/Content/images/vk.png" width="70"
+                         height="70" alt="Анастасия в вк">
+                </a>
+
+                <a href="https://www.instagram.com/polyashova66/">
+                    <img src="~/Content/images/insta.png" width="70"
+                         height="70" alt="Анастасия в инстаграм">
+                </a>
+            </p>
+
+            <p class="Potstup">  &copy; @DateTime.Now.Year</p>
+           
         </footer>
     </div>
 
