@@ -1,31 +1,143 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<script type="text/javascript">
+    var slideshow = new TINY.slider.slide('slideshow', {
+        id: 'slider',
+        auto: 4,
+        resume: false,
+        vertical: false,
+        navid: 'pagination',
+        activeclass: 'current',
+        position: 0,
+        rewind: false,
+        elastic: true,
+        left: 'slideleft',
+        right: 'slideright'
+    });
+</script>
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<style>
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    body {
+        background-image: url(/Content/images/12.png);
+        font: 12px verdana,arial;
+        color: #555;
+        
+    }
+
+    p {
+        line-height: 1.4;
+        margin-bottom: 12px
+    }
+
+    #wrapper {
+        width: 673px;
+        margin: 50px auto
+    }
+
+    #container {
+        position: relative;
+        background: #fff;
+        padding: 32px;
+        height: 235px;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc
+    }
+
+    .sliderbutton {
+        float: left;
+        width: 25px;
+        height: 235px;
+        cursor: pointer
+    }
+
+    #slideleft {
+        background: url(images/icons.gif) -50px -265px no-repeat
+    }
+
+        #slideleft:hover {
+            background-position: -0 -265px
+        }
+
+    #slideright {
+        background: url(images/icons.gif) 0 90px no-repeat
+    }
+
+        #slideright:hover {
+            background-position: -50px 90px
+        }
+
+    #slider {
+        float: left;
+        position: relative;
+        overflow: auto;
+        width: 558px;
+        height: 235px
+    }
+
+        #slider ul {
+            position: absolute;
+            list-style: none;
+            top: 0;
+            left: 0
+        }
+
+        #slider li {
+            float: left;
+            width: 558px;
+            height: 235px
+        }
+
+    .pagination {
+        position: absolute;
+        top: 40px;
+        right: 61px;
+        list-style: none;
+        height: 25px
+    }
+
+        .pagination li {
+            float: left;
+            cursor: pointer;
+            height: 8px;
+            width: 8px;
+            background: #ccc;
+            margin: 0 4px 0 0;
+            border: 1px solid #fff
+        }
+
+            .pagination li:hover, li.current {
+                background: #fff
+            }
+</style>
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="script.js"></script>
+<div id="wrapper">
+    <div id="container">
+        <div class="sliderbutton" id="slideleft" onclick="slideshow.move(-1)"></div>
+        <div id="slider">
+            <ul>
+                <li><img src="~/Content/images/1.jpg" width="558" height="235" alt="Image One" /></li>
+                <li><img src="~/Content/images/2.jpg" width="558" height="235" alt="Image Two" /></li>
+                <li><img src="~/Content/images/3.jpg" width="558" height="235" alt="Image Three" /></li>
+                <li><img src="~/Content/images/4.jpg" width="558" height="235" alt="Image Four" /></li>
+            </ul>
+        </div>
+        <div class="sliderbutton" id="slideright" onclick="slideshow.move(1)"></div>
+        <ul id="pagination" class="pagination">
+            <li onclick="slideshow.pos(0)"></li>
+            <li onclick="slideshow.pos(1)"></li>
+            <li onclick="slideshow.pos(2)"></li>
+            <li onclick="slideshow.pos(3)"></li>
+        </ul>
+    </div>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
