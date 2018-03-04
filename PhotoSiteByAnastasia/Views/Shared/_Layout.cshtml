@@ -30,6 +30,39 @@
             @*<a>@Html.ActionLink("Обо мне", "Contact", "Home")</a>
             <a>@Html.ActionLink("Услуги", "Index", "Home")</a>*@
 
+=======
+  
+    <!--<div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        @Html.ActionLink("Имя приложения", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    </div>  -->
+    
+
+            
+
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">*@
+            @*<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>*@
+        @*</div>*@
+            @*<div class="navbar-collapse collapse">*@
+                <ul>
+                    <li><a href="#">@Html.ActionLink("Главная", "Index", "Home") </a></li>
+                    <li><a href="#">@Html.ActionLink("Галерея фотографий", "Gallery", "Home")</a></li>
+                    <li><a href="#">@Html.ActionLink("Обо мне", "About", "Home")</a></li>
+                    <li><a href="#">@Html.ActionLink("Услуги", "Service", "Home")</a></li>
+                    <li><a href="#">@Html.ActionLink("Запись", "Entry", "Home")</a></li>
+                    <li><a href="#">@Html.ActionLink("Контакты", "Contact", "Home")</a></li>
+                </ul>
+>>>>>>> 40eecfffbe2a0d9f477914bfa412a5f5c0f636af
             @*</div>
                 </div>
             </div>*@
@@ -42,6 +75,7 @@
         <li><a href="#">@Html.ActionLink("Запись", "About", "Home")</a></li>
     </ul>
             
+<<<<<<< HEAD
     <div class="container body-content">
                 @RenderBody()
                 <hr />
@@ -59,6 +93,14 @@
                                  height="70" alt="Анастасия в инстаграм">
                         </a>
                     </p>
+=======
+            <p>&copy; @DateTime.Now.Year</p>
+            <p>
+                <a class="otstup" href="https://vk.com/yourastyusha">
+                    <img src="~/Content/images/vk.png" width="70"
+                         height="70" alt="Анастасия в вк">
+                </a>
+>>>>>>> 40eecfffbe2a0d9f477914bfa412a5f5c0f636af
 
                     <p class="Potstup">  &copy; @DateTime.Now.Year</p>
 
