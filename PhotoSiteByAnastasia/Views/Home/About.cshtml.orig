@@ -1,6 +1,7 @@
 ﻿@{
-    ViewBag.Title = "Обо мне";
+    ViewBag.Title = "About";
 }
+<<<<<<< HEAD
 <style>
     .block {
         display: inline-block;
@@ -27,3 +28,6 @@
         Буду очень рада разделить, а самое главное- запечатлеть эти прекрасные моменты.
     </p>
 </div>
+=======
+
+>>>>>>> 8cfbbbf9968fdbd9403e77a5d6e9f57b6c1feae4
