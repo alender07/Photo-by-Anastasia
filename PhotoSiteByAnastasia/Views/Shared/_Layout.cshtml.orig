@@ -62,6 +62,7 @@
                     <li><a href="#">@Html.ActionLink("Запись", "Entry", "Home")</a></li>
                     <li><a href="#">@Html.ActionLink("Контакты", "Contact", "Home")</a></li>
                 </ul>
+>>>>>>> 40eecfffbe2a0d9f477914bfa412a5f5c0f636af
             @*</div>
                 </div>
             </div>*@
@@ -74,6 +75,8 @@
         <li><a href="#">@Html.ActionLink("Запись", "About", "Home")</a></li>
     </ul>
             
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
     <div class="container body-content">
                 @RenderBody()
@@ -92,13 +95,17 @@
                                  height="70" alt="Анастасия в инстаграм">
                         </a>
                     </p>
+=======
             <p>&copy; @DateTime.Now.Year</p>
+>>>>>>> 8cfbbbf9968fdbd9403e77a5d6e9f57b6c1feae4
             <p>
                 <a class="otstup" href="https://vk.com/yourastyusha">
                     <img src="~/Content/images/vk.png" width="70"
                          height="70" alt="Анастасия в вк">
                 </a>
+>>>>>>> 40eecfffbe2a0d9f477914bfa412a5f5c0f636af
 
+                    <p class="Potstup">  &copy; @DateTime.Now.Year</p>
 
                 </footer>
             </div>
