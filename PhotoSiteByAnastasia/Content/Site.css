@@ -1,49 +1,31 @@
 ﻿
-
-body {
-    background: #808080;
-    padding-top: 50px;
-    padding-bottom: 20px;
-}
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
-
-a.IMG {
-    border: none;
-}
-/*body {
+* {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-}*/
+}
 
-/*Оформление меню*/
+html {
+    background: #23234323;
+}
+
+body {
+    background: aliceblue;
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#fe70), color-stop(0.07,#ffffff), color-stop(1.0, #abd0d6));
+    min-height: 500px;
+    padding: 100px;
+}
+
+/*меню*/
 ul {
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
     padding: 0;
     display: flex;
+    font-family: 'Cormorant Infant', serif;
+    text-decoration: none;
 }
 
     ul li {
@@ -57,8 +39,6 @@ ul {
             padding: 5px 10px;
             color: #aaa;
             font-size: 24px;
-            text-decoration: dashed;
-            text-transform: uppercase;
             transition: 0.5s;
             overflow: hidden;
         }
@@ -70,17 +50,21 @@ ul {
                 left: -100%;
                 width: 100%;
                 height: 4px;
-                background: #2196f3;
+                background: #d2f9ff;
                 transition: 0.5s;
+                text-decoration: none;
             }
 
             ul li a:hover {
-                color: #fff;
+                color: #000;
+                text-decoration: none;
+                border-radius: 500px;
             }
 
                 ul li a:hover::before {
                     animation: animate .5s linear forwards;
                 }
+
 @keyframes animate {
     0% {
         top: calc(50% - 2px);
@@ -104,10 +88,96 @@ ul {
     }
 }
 
-a.otstup {
-    margin-left:550px;
+/*Стили для текста и оформления*/
+p {
+    color: #000;
+    line-height: 1;
+    font-family: 'Cormorant Infant', serif;
+    font-weight: normal;
+    margin: inherit;
+    position: static;
+    left: 50%;
+    margin-left: -px;
+    text-indent: 30px;
 }
 
-p.otstup {
-    margin-left:590px;
+p {
+    font-size: 20px;
+    padding: 5px 15px 10px;
+    top: 0;
+}
+
+h2 {
+    font-family: 'Cormorant Infant', serif;
+    font-size: 18px;
+    padding: 4px 13px 9px 11px;
+    top: 51px;
+    text-indent: 190px;
+}
+
+header {
+    display: block;
+    margin-top: 50px;
+    position: relative;
+}
+
+nav {
+    display: block;
+    margin: 600px auto 0;
+    text-align: center;
+    width: 600px;
+}
+
+footer {
+    color: #000000;
+    font-size: 15px;
+    line-height: normal.;
+    padding: 50px 20px 0;
+    text-align: center;
+    display: block;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+
+a, a:visited {
+    text-decoration: none;
+    outline: none;
+    color: #aedeff;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+img.nastya {
+    float: left; /* Обтекание картинки по левому краю */
+    padding-right: 20px; /* Отступ слева */
+    padding-bottom: 20px; /* Отступ снизу */
+    margin-top: 10px;
+    width: 290px;
+    border-radius: 500px;
+}
+
+img.nastya1 {
+    float: right; /* Обтекание картинки по левому краю */
+    padding-left: 20px; /* Отступ слева */
+    padding-bottom: 20px; /* Отступ снизу */
+    margin-top: 10px;
+    width: 300px;
+    border-radius: 500px;
+}
+
+hr {
+    border: none;
+    background-color: black;
+    height: 1px;
+}
+
+p.shrift {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+div.niz {
+    padding-top: 100px;
 }
