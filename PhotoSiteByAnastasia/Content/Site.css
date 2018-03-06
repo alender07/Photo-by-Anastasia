@@ -99,6 +99,7 @@ p {
     left: 50%;
     margin-left: -px;
     text-indent: 30px;
+    text-align: justify;
 }
 
 p {
@@ -112,7 +113,7 @@ h2 {
     font-size: 18px;
     padding: 4px 13px 9px 11px;
     top: 51px;
-    text-indent: 190px;
+    text-indent: 90px;
 }
 
 header {
@@ -132,7 +133,7 @@ footer {
     color: #000000;
     font-size: 15px;
     line-height: normal.;
-    padding: 50px 20px 0;
+    padding: 50px 450px 0;
     text-align: center;
     display: block;
     font-family: 'Shadows Into Light', cursive;
@@ -155,7 +156,7 @@ img.nastya {
     padding-right: 20px; /* Отступ слева */
     padding-bottom: 20px; /* Отступ снизу */
     margin-top: 10px;
-    width: 290px;
+    width: 450px;
     border-radius: 500px;
 }
 
@@ -176,6 +177,7 @@ hr {
 
 p.shrift {
     font-family: 'Shadows Into Light', cursive;
+    padding-left: 60px;
 }
 
 div.niz {
