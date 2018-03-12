@@ -1,7 +1,24 @@
-﻿
+﻿@model PhotoSiteByAnastasia.Models.EmailModel
 @{
-    ViewBag.Title = "Запись";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Записаться";
 }
+@using (Html.BeginForm("Entry", "Home", FormMethod.Post, new { @class = "well" }))
+{
+    @Html.ValidationSummary()
 
-<h2>Запись</h2>
-
+    <label>Тема</label>
+    @Html.TextBoxFor(m => m.Subject, new { @class = "input-xxlarge" })
+    <br/>
+    <label>Кому</label>
+    @Html.TextBoxFor(m => m.To, new { @class = "input-xxlarge" })
+    <br/>
+    <label>От кого</label>
+    @Html.TextBoxFor(m => m.From, new { @class = "input-xxlarge" })
+    <br/>
+    <label>Сообщение    </label>
+    @Html.TextAreaFor(m => m.Body, new { @class = "input-xxlarge" })
+    <br/>
+    <br />
+    <input type="submit" class="btn" value="Send" />
+}
