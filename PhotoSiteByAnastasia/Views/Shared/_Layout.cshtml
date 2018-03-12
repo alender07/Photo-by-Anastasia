@@ -13,71 +13,52 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-
-    <ul>
-        <li><a >@Html.ActionLink("Главная", "Index", "Home") </a></li>
-        <li><a >@Html.ActionLink("Галерея фотографий", "Gallery", "Home")</a></li>
-        <li><a >@Html.ActionLink("Обо мне", "About", "Home")</a></li>
-        <li><a >@Html.ActionLink("Услуги", "Service", "Home")</a></li>
-        <li><a >@Html.ActionLink("Запись", "Entry", "Home")</a></li>
-        <li><a >@Html.ActionLink("Контакты", "Contact", "Home")</a></li>
-    </ul>
-    <div class="niz"></div>
-        @*<ul>
+        <ul>
+            <li><a>@Html.ActionLink("Главная", "Index", "Home") </a></li>
             <li>
-                <a>@Html.ActionLink("Главная", "Index", "Home") </a>
-                <pseudo:after><pseudo:after>
+                <a class="down">@Html.ActionLink("Галерея фотографий", "Gallery", "Home")</a>
+                <ul class="submenu">
+                    <li><a href="">Свадебные фото</a></li>
+                    <li><a href="">Порно фото</a></li>
+                    <li><a href="">Гей-порно фото</a></li>
+                    <li><a href="">Свадебное гей фото</a></li>
+                </ul>
             </li>
-            <li>
-                <a>@Html.ActionLink("Обо мне", "About", "Home")</a>
-                <pseudo:after><pseudo:after>
-            </li>
-            <li>
-                <a>@Html.ActionLink("Галерея фотографий", "Gallery", "Home")</a>
-                <pseudo:after><pseudo:after>
-            </li>
-            <li>
-                <a>@Html.ActionLink("Услуги", "Service", "Home")</a>
-                <pseudo:after><pseudo:after>
-            </li>
-            <li>
-                <a>@Html.ActionLink("Запись", "Entry", "Home")</a>
-                <pseudo:after><pseudo:after>
-            </li>
-            <li>
-                <a>@Html.ActionLink("Контакты", "Contact", "Home")</a>
-                <pseudo:after><pseudo:after>
-            </li>
-        </ul>*@
-    @*------------Область для контакта и инстаграмма----------------------------------------------------*@
-        <div class="container body-content">
-            @RenderBody()
+            <li><a>@Html.ActionLink("Обо мне", "About", "Home")</a></li>
+            <li><a>@Html.ActionLink("Услуги", "Service", "Home")</a></li>
+            <li><a>@Html.ActionLink("Запись", "Entry", "Home")</a></li>
+            <li><a>@Html.ActionLink("Контакты", "Contact", "Home")</a></li>
+        </ul>
             <div class="niz"></div>
-            <hr>
-            <footer>
+            @*------------Область для контакта и инстаграмма----------------------------------------------------*@
+            <div class="container body-content">
+                @RenderBody()
+                <div class="niz"></div>
+                <hr>
+                <footer>
 
-                <p>
-                    <a href="https://vk.com/yourastyusha">
-                        <img src="~/Content/images/vk.png" width="70"
-                             height="70" alt="Анастасия в вк">
-                    </a>
+                    <p>
+                        <a href="https://vk.com/yourastyusha">
+                            <img src="~/Content/images/vk.png" width="70"
+                                 height="70" alt="Анастасия в вк">
+                        </a>
 
-                    <a href="https://www.instagram.com/polyashova66">
-                        <img src="~/Content/images/insta.png" width="70"
-                             height="70" alt="Анастасия в инстаграм">
-                    </a>
-                </p>
+                        <a href="https://www.instagram.com/polyashova66">
+                            <img src="~/Content/images/insta.png" width="70"
+                                 height="70" alt="Анастасия в инстаграм">
+                        </a>
+                    </p>
 
-                <p class="shrift">&copy; @DateTime.Now.Year</p>
-
-
-
-            </footer>
-        </div>
+                    <p class="shrift">&copy; @DateTime.Now.Year</p>
 
 
-        @Scripts.Render("~/bundles/jquery")
-        @Scripts.Render("~/bundles/bootstrap")
-        @RenderSection("scripts", required: false)
+
+                </footer>
+            </div>
+
+
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
 </body>
 </html>
