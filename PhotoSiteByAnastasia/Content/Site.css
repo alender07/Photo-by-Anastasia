@@ -126,7 +126,7 @@ header {
 
 nav {
     display: block;
-    margin: 600px auto 0;
+    margin: px auto 0;
     text-align: center;
     width: 600px;
 }
@@ -180,6 +180,11 @@ hr {
 p.shrift {
     font-family: 'Shadows Into Light', cursive;
     padding-left: 60px;
+}
+
+/*отступы*/
+div.verh {
+    padding-top: 50px;
 }
 
 div.niz {
@@ -272,3 +277,40 @@ figure.slider {
         font-size: 2rem;
         padding: .6rem;
     }
+
+/*выпадающее меню*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Libre+Baskerville');
+
+.submenu {
+    position: fixed;
+    top: 100%;
+    left: 27%;
+    z-index: 5;
+    padding: 15px 0 15px;
+    margin-top: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(189, 253, 250, 0.84);
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .5s;
+    display: inline-block;
+}
+
+li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+    display: inline-block;
+}
+
+.submenu a {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    transition: .5s linear;
+}
+
