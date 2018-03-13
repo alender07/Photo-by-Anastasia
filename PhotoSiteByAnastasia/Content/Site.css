@@ -343,8 +343,8 @@ figure.slider {
 }
 
 section {
-    width: 1200px;
-    height: 400px;
+    width:fit-content;
+    height:fit-content;
     position: relative;
     margin: 0 auto;
     border: 10px solid #fff;
