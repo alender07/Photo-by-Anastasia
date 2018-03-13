@@ -1,0 +1,14 @@
+﻿body {
+    display: -webkit-inline-box;
+}
+.div_foto {
+    margin-top: 40px;
+    display: -webkit-inline-box;
+}
+
+div div a img {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+}

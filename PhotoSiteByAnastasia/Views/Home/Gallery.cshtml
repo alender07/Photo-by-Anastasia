@@ -4,17 +4,23 @@
 }
 <html>
 <head>
+    <meta http-equiv="Content-Type" @*content="text/html; charset=utf-8"/*@>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Галерея</title>
-    <link rel="StyleSheet" href="~/Content/StyleSheet1.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant" rel="stylesheet">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/Galery.css")
 </head>
 <body>
-    <div class="image"><a href="#"><img width="40%" height="40%" src="https://pp.userapi.com/c637731/v637731977/693be/IptRhCCFHY0.jpg" /></a></div>
-    <div class="image"><a href="#"><img width="40%" height="40%" src="https://pp.userapi.com/c637731/v637731977/693be/IptRhCCFHY0.jpg" /></a></div>
-    <div class="image"><a href="#"><img width="40%" height="40%" src="https://pp.userapi.com/c637731/v637731977/693be/IptRhCCFHY0.jpg" /></a></div>
+
+    <div class="div_foto">
+        <div><a><img src="https://pp.userapi.com/c637731/v637731977/693be/IptRhCCFHY0.jpg" /></a></div>
+        <div><a><img src="https://pp.userapi.com/c637731/v637731977/693be/IptRhCCFHY0.jpg" /></a></div>
+    </div>
 </body>    
-</body>
+
 </html>
 
 
