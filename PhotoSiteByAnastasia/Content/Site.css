@@ -191,7 +191,43 @@ div.niz {
     padding-top: 100px;
 }
 
-/*для слайдов*/
+/*выпадающее меню*/
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Libre+Baskerville');
+
+.submenu {
+    position: fixed;
+    top: 100%;
+    left: 27%;
+    z-index: 5;
+    padding: 15px 0 15px;
+    margin-top: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgba(189, 253, 250, 0.84);
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .5s;
+    display: inline-block;
+}
+
+li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+    display: inline-block;
+}
+
+.submenu a {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    transition: .5s linear;
+}
+
+/*слайдер*/
 
 @import url(https://fonts.googleapis.com/css?family=Istok+Web);
 
@@ -268,7 +304,7 @@ figure.slider {
         height: auto;
     }
 
-    figure.slider figure figcaption {
+    figure.slider figcaption {
         position: absolute;
         bottom: 0;
         background: rgba(0,0,0,0.4);
@@ -276,43 +312,28 @@ figure.slider {
         width: 100%;
         font-size: 2rem;
         padding: .6rem;
+        opacity: 0;
+        transition: .5s;
+        transform: translate(-100%, 1px);
+        display: inline-block;
     }
 
-/*выпадающее меню*/
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Libre+Baskerville');
+    figure.slider:hover figcaption {
+        position: absolute;
+        bottom: 0;
+        background: rgba(0,0,0,0.4);
+        color: #fff;
+        width: 100%;
+        font-size: 2rem;
+        padding: .6rem;
+        visibility: visible;
+        opacity: 1;
+        display: inline-block;
+    }
 
-.submenu {
-    position: fixed;
-    top: 100%;
-    left: 27%;
-    z-index: 5;
-    padding: 15px 0 15px;
-    margin-top: 5px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 0 30px rgba(189, 253, 250, 0.84);
-    box-sizing: border-box;
-    visibility: hidden;
-    opacity: 0;
-    transform: translate(-50%, 20px);
-    transition: .5s;
-    display: inline-block;
-}
 
-li:hover .submenu {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(-50%, 0);
-    display: inline-block;
-}
 
-.submenu a {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    padding: 5px 5px;
-    transition: .5s linear;
-}
+    /*фон*/
 
 
 
