@@ -314,3 +314,18 @@ li:hover .submenu {
     transition: .5s linear;
 }
 
+
+
+.img_gal {
+    max-width: 380px;
+    max-height: 380px;
+}
+
+section {
+    width: 1200px;
+    height: 400px;
+    position: relative;
+    margin: 0 auto;
+    border: 10px solid #fff;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
