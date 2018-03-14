@@ -9,9 +9,9 @@ namespace PhotoSiteByAnastasia.Models
     {
         public string Subject { get; set; }
 
-        public string From { get; set; }
+        public string From = "alender07@yandex.ru";
 
-        public string To { get; set; }
+        public string To = "alender07@yandex.ru";
 
         public string Body { get; set; }
     }

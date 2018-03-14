@@ -10,8 +10,7 @@ namespace PhotoSiteByAnastasia.Controllers
 {
     public class EmailController : MailerBase
     {
-             
-
+        
         public EmailResult SendEmail(EmailModel model)
         {
             To.Add(model.To);
