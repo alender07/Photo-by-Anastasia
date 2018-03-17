@@ -34,6 +34,10 @@ namespace PhotoSiteByAnastasia.Controllers
         {
             return View();
         }
+        public ActionResult GalleryPartical1()
+        {
+            return PartialView();
+        }
 
         public ActionResult Entry()
         {
