@@ -5,13 +5,10 @@ using System.Web;
 
 namespace PhotoSiteByAnastasia.Models
 {
-    public class User
+    public class Login
     {
         public int UserId;
-        public string Login;
+        public string Log;
         public string Password;
-        public string Name;
-        public string Email;
-        public string City;
     }
 }
