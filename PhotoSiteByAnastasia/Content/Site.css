@@ -350,3 +350,9 @@ section {
     border: 10px solid #fff;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
+
+.feedback {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
